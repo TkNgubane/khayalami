@@ -1,0 +1,1726 @@
+
+@import url('../CSS/fonts.css');
+
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+    
+    background-color: var(--primary);
+}
+
+:root{
+    
+    /* theme colours */
+    --primary: #3b4c5e;
+    --secondary: #203A5C;
+    --tertiary: #172941;
+    --dark: #1E2024;
+    --yell: #F1BD2C;
+    --grr: #8BAE84;
+    --shadow: 0 1px 5px rgba(182, 181, 181, 0.8);
+
+    /* gradient colour */
+    --gradient: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+    /* theme font families */
+    /* --Abel:'Abel',cursive; */
+}
+
+
+
+
+/* --------- Global Classes ---------- */
+
+a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+a.linking{
+    color: black;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+/* ----XXX--- Global Classes ---XXX--- */
+
+
+
+
+/* ---------- Nav Bar ---------- */
+
+.navclass{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;               /* used to collapse menu */
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.navclass .nav-menu .nav-brand .khayalami{
+    color: var(--grr);
+}
+
+.navclass .nav-menu{
+    justify-content: space-between;
+}
+
+.navclass .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.navclass .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.3rem 0;
+}
+
+.navclass .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.collapse{
+    height: 30rem;
+}
+
+
+.navclass .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.navclass .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.navclass .nav-items .nav-link:hover{
+    background-color: var(--yell);
+}
+
+.navclass .nav-items .nav-link:hover a{
+    color: white;
+}
+
+.navclass .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+
+    font-size: 1.6rem;
+    
+}
+
+.navclass .social{
+    padding: 1.4rem 0;
+}
+
+.navclass .social i{
+    padding: 0 .5rem;
+}
+
+.navclass .social i:hover{
+    color: var(--grr);
+}
+
+
+/* ----XXX--- Nav Bar ---XXX---- */
+
+
+
+
+/* <!-- ------------------------------------- Main Site secton ------------------------------------- --> */
+
+/* ------------------- Home Wall ------------------- */
+main .site-title{
+    background: url('../Houzas/homeAgentWall.jpg');
+    background-size: cover;
+    height: 110vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.bigfont{
+    font-size: 65px !important;
+    color: white;
+}
+
+.welcomefont{
+    font-size: 65px !important;
+    color: white;
+}
+
+main .site-title .site-background{
+    padding-top: 16rem;
+    text-align: center;
+    color: white;
+}
+
+main .site-title h1{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--gradient);
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 4px solid white;
+    color: var(--yell);
+}
+
+/* --------XXX-------- Home Wall --------XXX-------- */
+
+/* <!-- ------------------- Buttons ------------------- --> */
+
+main .buttons .twobutton{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+main .buttons .twobutton .btn{
+    width: 80%;
+    background: var(--gradient);
+    position: relative;
+}
+
+
+/* ------------------- Fixed Button ------------------- */
+
+main .buttons{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+main .fixedbutton{
+    position: fixed;
+    top: 80%;
+    bottom: 20%;
+    left: 0px;
+    z-index: 9999;
+
+    height: 7px;
+}
+
+main .fixedbutton .btn:hover{
+    background: var(--yell);
+    
+}
+
+main .fixedbutton a:hover{
+    color: white;
+}
+
+/* main .fixedbutton {
+    width: 400px !important;
+}  */
+
+/* 
+.fix{
+    overflow: hidden;
+    position: fixed;
+} */
+
+/* ---------XXX-------- Fixed Button ----------XXX------ */
+
+/* <!-- --------XXX-------- Buttons --------XXX-------- --> */
+
+
+/* <!-- ------------------- Blog Carousel ------------------- --> */
+
+/* main .blog{
+    background: url();
+} */
+
+main .blog .container .heading{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+main .blog .blog-post{
+    padding-top: 6rem;
+}
+
+main .blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+main .blog-content .blog-title{
+    padding: 2rem 0;
+}
+
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background: var(--gradient);
+    margin: .5rem;
+}
+
+main .blog-content span{
+    display: block;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: var(--yell);
+    background: transparent;
+    font-size: 2rem;
+}
+
+.carouselpic{
+    width: 256.06px;
+    height: 170px;
+}
+
+
+
+@media only screen and (max-width: 520px){
+    .main .blog{
+        height: 600px;
+    }
+
+
+    .main .map {
+        padding-top: 2rem;
+    }
+
+}
+
+
+/* <!-- ---------XXX------- Blog Carousel ---------XXX------- --> */
+
+
+
+
+/* <!-- ------------------- Site Content --------------------- --> */
+
+/* <!-- ------------- Map --------------- --> */
+
+main .map .container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+
+    padding-bottom: 10rem;
+}
+
+main .map .post-content{
+    width: 100%;
+    /* margin-bottom: 5rem; */
+}
+
+/* main .site-content .post-content> post-image{
+    display: flex;
+    
+} */
+
+main .map .container .post-content> .post-image{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+main .map .container .post-content> .post-image .post-info{
+    background: var(--yell);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 3rem;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main .map .container .post-content > .post-image > div{
+    overflow: hidden;
+}
+
+main .map .container .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+main .map .container .post-content > .post-image .img:hover{
+    transform: scale(1.1);
+}
+
+
+
+main .post-content .post-title a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: var(--grr)
+}
+
+
+
+
+
+
+/* <!-- --------XXX------ Map Side Bar ------XXX-------- --> */
+
+main .container > .sidebar .province-list .list-items{
+    background: var(--gradient);
+    color: black;
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container> .sidebar .province-list .list-items a{
+    color: black;
+}
+
+
+.container .sidebar .popular-post .popular-content{
+    padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2{
+    padding-top: 15rem;
+}
+
+.site-content .sidebar .popular-post .post-info{
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: var(--primary) !important;
+}
+
+.site-content .sidebar .popular-post .post-title a{
+    font-size: 1.3rem;
+}
+
+.site-content .sidebar .newslatter{
+    padding-top: 8rem;
+}
+
+.site-content .sidebar .newslatter .form-element{
+    padding: .5rem 2rem;
+}
+
+.site-content .sidebar .newslatter .input-element{
+    width: 80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+}
+
+.site-content .sidebar .newslatter .form-btn{
+    border-radius: 0;
+    padding: .8rem 32%;
+    margin: 1rem 0;
+    background: var(--gradient);
+}
+
+
+/* <!-- --------XXX------ Map Side Bar ------XXX-------- --> */
+
+/* <!-- ------XX----- Map -------XX------ --> */
+
+
+
+/* ----------------------------- Articles ----------------------------- */
+main .container .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding-bottom: 4rem;
+}
+
+main .post-content{
+    width: 100%;
+    /* margin-bottom: 5rem; */
+}
+
+/* main .site-content .post-content> post-image{
+    display: flex;
+    
+} */
+
+main .site-content .post-content> .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+main .site-content .post-content> .post-image .post-info{
+    background: var(--yell);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 20vw;
+    border-radius: 3rem;
+
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+main .site-content .post-content > .post-image > div{
+    overflow: hidden;
+}
+
+main .site-content .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-image .img:hover{
+    transform: scale(1.1);
+}
+
+main .site-content .post-content > .post-image .post-info span{
+    margin: 0 .5rem;
+}
+
+main .post-content .post-title a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: var(--grr)
+}
+
+.site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background: var(--yell);
+}
+
+/* 
+.heading{
+    color: white;
+} */
+
+.site-content .pagination{
+    justify-content: center;
+    color: white;
+    margin: 4rem 0;
+}
+
+.site-content .pagination a{
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+}
+
+.site-content .pagination .pages{
+    background: var(--yell);
+    color: white;
+}
+
+
+/* <!-- --------XXX-------- Site Content --------XXX-------- --> */
+
+
+
+/* <!-- --------XXX------ Side Bar ------XXX-------- --> */
+
+main .site-content> .sidebar .province-list .list-items{
+    background: var(--gradient);
+    color: black;
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-content> .sidebar .province-list .list-items a{
+    color: black;
+}
+
+
+.site-content .sidebar .popular-post .popular-content{
+    padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2{
+    padding-top: 15rem;
+}
+
+.site-content .sidebar .popular-post .post-info{
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: var(--primary) !important;
+}
+
+.site-content .sidebar .popular-post .post-title a{
+    font-size: 1.3rem;
+}
+
+.site-content .sidebar .newslatter{
+    padding-top: 8rem;
+}
+
+.site-content .sidebar .newslatter .form-element{
+    padding: .5rem 2rem;
+}
+
+.site-content .sidebar .newslatter .input-element{
+    width: 80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+}
+
+.site-content .sidebar .newslatter .form-btn{
+    border-radius: 0;
+    padding: .8rem 32%;
+    margin: 1rem 0;
+    background: var(--gradient);
+}
+
+
+/* <!-- --------XXX------ Side Bar ------XXX-------- --> */
+
+
+
+
+/* <!-- -----------------XXXX---------------- Main Site secton -------------XXXX-------------------- --> */
+
+/* <!-- ---------------------------  Footer  --------------------------- --> */
+
+footer.footer{
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: 25% 25% 25% 25%; */
+}
+
+footer.footer .container> div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: white;
+}
+
+
+
+footer.footer .container .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .container .newsletter input{
+    padding: .5rem .7rem;
+    border: none;
+    background: var(--primary);
+    color: white;
+    font-size: 1rem;
+    width: 75%;
+}
+
+footer.footer .container .newsletter span{
+    background: var(--gradient);
+    padding: .5rem .7rem;
+}
+
+footer.footer .instagram-images div> img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .4rem;
+}
+
+footer.footer .follow div i{
+    color: white;
+    padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+}
+
+footer.footer .weblink{
+    justify-content: center;
+    margin-top: 0rem;
+}
+
+footer.footer .brightness{
+    justify-content: center;
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span{
+    color: var(--yell);
+}
+
+footer.footer .move-up span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+/* <!-- -----------XXX-------------  Footer  ------------XXX------------ --> */
+
+
+
+
+/* ---------- Viewport less then or equal to 1130px ---------- */
+
+@media only screen and (max-width: 1130px){
+    .site-content .post-content> .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar,.popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ----XX---- Viewport less then or equal to 1130px ----XX---- */
+
+
+
+
+/* ---------- Viewport less then or equal to 1120px ---------- */
+
+@media only screen and (max-width: 1120px){
+    main .map .container{
+        grid-template-columns: 100%;
+    }
+
+    main .container .site-content{
+        grid-template-columns: 100%;
+    }
+}
+
+/* ----XX---- Viewport less then or equal to 1120px ----XX---- */
+
+
+
+
+/* ---------- Viewport less then or equal to 750px ---------- */
+
+@media only screen and (max-width: 750px){
+    .navclass .nav-menu, .navclass .nav-items{
+        flex-direction: column;
+    }
+
+    .navclass .toggle-collapse{
+        display: initial;
+    }
+    
+    main .container .site-content{
+        /* display: grid; */
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ----XXX--- Viewport less then or equal to 750px ----XXX--- */
+
+
+/* ---------- Viewport less then or equal to 520px ---------- */
+@media only screen and (max-width: 520px){
+    main .blog{
+        height: 125vh;
+    }
+
+    main.main .map .container .post-content> .post-image .post-info{
+        display: none;
+    }
+
+    main.main .container .site-content .post-content> .post-image .post-info{
+        display: none;
+    }
+
+    footer.footer .container> div{
+        padding: 1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    nav .toggle-collapse{
+        width: 80% !important;
+    }
+}
+/* ----XXX--- Viewport less then or equal to 520px ----XXX--- */
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ------------------------------ listings ------------------------------ */
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+/* ______________________________________________________ */
+
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
+
+.houselisting{
+    width: 790px;
+    height: 360px;
+}
+
+.houselisting .listing{
+    width: 430px;
+    height: 360px;
+}
+
+/* __________________________Info section____________________________ */
+
+.houselisting{
+    background: var(--tertiary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    /* padding: 3rem; */
+    /* padding-bottom: 4rem; */
+}
+/* 
+.houselisting .propertydetails{
+    padding-top: 3rem;
+}
+
+.houselisting .minioverview{
+    padding-top: 3rem;
+} */
+
+
+
+.allpricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.listingtypeapart {
+    color: var(--yell);
+}
+
+.listingtypehou {
+    color: orangered;
+} 
+
+.listingtypesite {
+    color: palevioletred;
+}
+
+.propertydetails {
+    font-size: 20px;
+}
+
+
+/* ____________xxx___________Info section____________xxx_____________ */
+
+
+/* <!-- ----------------- Side Bar ----------------- --> */
+
+.map .container .sidebar .popular-post .popular-content{
+    padding: 1rem 0;
+}
+
+.map .container .sidebar .popular-post h2{
+    padding-top: 15rem;
+}
+
+.map .container .sidebar .popular-post .post-info{
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: var(--primary) !important;
+}
+
+.map .container .sidebar .popular-post .post-title a{
+    font-size: 1.3rem;
+}
+
+.map .container .sidebar .newslatter{
+    padding-top: 8rem;
+}
+
+.map .container .sidebar .newslatter .form-element{
+    padding: .5rem 2rem;
+}
+
+.map .container .sidebar .newslatter .input-element{
+    width: 80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+}
+
+.map .container .sidebar .newslatter .form-btn{
+    border-radius: 0;
+    padding: .8rem 32%;
+    margin: 1rem 0;
+    background: var(--gradient);
+}
+
+
+/* <!-- --------XXX------ Side Bar ------XXX-------- --> */
+
+
+
+/* ______________________________________________________ */
+
+
+
+/* Media Queries */
+@media (max-width: 700px) {
+    
+    .showcase h1 {
+        font-size: 2.5rem;
+    }
+
+
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+
+
+    .houselisting {
+        grid-template-columns: 1fr;
+        padding-bottom: 20rem;
+        height: 680px;
+    }
+
+    .houselisting .listing{
+        width: 630px;
+        height: 400px;
+    }
+
+    .allpricing {
+        padding-left: 20px;
+    }
+
+    .houselisting .btn {
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+
+
+@media (max-width: 520px) {
+    
+    .houselisting {
+        grid-template-columns: 1fr;
+        padding-bottom: 20rem;
+        height: 570px;
+    }
+
+    .listing {
+        width: 630px;
+        height: 300px !important;
+    }
+
+    .allpricing {
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ------------------------------ Catalogue ------------------------------ */
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+.container .site-content .post-content .post-image .catalogueimg {
+    height: 600px;
+    width: 720px;
+}
+
+
+
+/* 
+@media only screen and (max-width: 400px){
+    .main .container .site-content .post-content .post-image .catalogueimg {
+        height: 50px !important;
+        /* width: 720px; 
+    }
+
+    #cataimg {
+        height: 25px;
+    }
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ------------------------------ Listing Slide show ------------------------------ */
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+.listmain {
+    display: flex;
+    flex-direction: column;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+  
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+.images {
+    justify-content: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.listingcontainer {
+    width: 85%;
+    height: 350px;
+}
+  
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+  
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    background-color: rgba(92, 168, 126, 0.452);
+    position: absolute;
+    top: 140%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: var(--yell);
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+  
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.overview {
+    background: var(--tertiary);
+    box-shadow: var(--shadow);
+    padding: 1rem 0;
+}
+
+.textdetails {
+    padding-left: 15px;
+}
+
+
+@media only screen and (max-width: 900px){
+    
+    .listingcontainer {
+        width: 800px;
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 850px){
+    
+    .listingcontainer {
+        width: 800px;
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    
+    .listingcontainer {
+        width: 750px;
+        height: 300px;
+    }
+
+}
+
+
+@media only screen and (max-width: 700px){ 
+    
+    .listingcontainer {
+        width: 650px;
+        height: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 650px){ 
+    
+    .listingcontainer {
+        width: 600px;
+        height: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){ 
+    
+    .listingcontainer {
+        width: 550px;
+        height: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 550px){ 
+    
+    .listingcontainer {
+        width: 500px;
+        height: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 500px){ 
+    
+    .listingcontainer {
+        width: 450px;
+        height: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 450px){ 
+    
+    .listingcontainer {
+        width: 400px;
+        height: 250px;
+    }
+
+}
+
+@media only screen and (max-width: 400px){ 
+    
+    .listingcontainer {
+        width: 300px;
+        height: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 350px){ 
+    
+    .listingcontainer {
+        width: 280px;
+        height: 200px;
+    }
+
+        
+    .prev,
+    .next {
+        top: 70%;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 270px){ 
+    
+    .listingcontainer {
+        width: 250px;
+        height: 200px;
+    }
+
+    
+    .prev,
+    .next {
+        top: 70%;
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 250px){ 
+    
+    .listingcontainer {
+        width: 200px;
+        height: 200px !important;
+
+        
+    }
+
+    .prev,
+    .next {
+        top: 70%;
+        font-size: 10px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ------------------------------ Calculator ------------------------------ */
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+body .listmain .cal{
+    padding-top: 25rem;
+}
+
+body .listmain .calculator {
+    /* padding-top: 25rem; */
+    background-color: yellow;
+    font-family: 'Trebuchet MS';
+    
+}
+  
+h1 {
+    font-size: 35px;
+}
+  
+h1 {
+    font-size: 21px;
+    margin-top: 20px;
+}
+  
+.calculator {
+    width: 400px;
+    height: 450px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 20px 0px 0px 100px;
+    border-radius: 50px;
+    color: white;
+}
+  
+input {
+    padding: 7px;
+    width: 70%;
+    margin-top: 7px;
+}
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ------------------------------ Select Dropdown ------------------------------ */
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    font-family: Arial;
+
+    overflow: visible;
+}
+  
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+  
+.select-selected {
+    background-color: DodgerBlue;
+}
+  
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+  
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+  
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+  
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+  
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+  
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* .custom-select{
+    padding: 10rem;
+} */
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ------------------------------ No Ad ------------------------------ */
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+
+.noad {
+    display: flex;
+    justify-content: center;
+} 
+.noad-icon {
+    display: flex;
+    justify-content: center;
+} 
+.noad-text {
+    display: flex;
+    justify-content: center;
+
+    font-size: 40px;
+
+    padding-bottom: 3rem;
+} 
+
+
+.postad {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center !important;
+
+} 
+.main .container .postad .postad-text .adtext {
+    font-size: 35px !important;
+
+}
+
+.ad-package {
+    width: 800px;
+}
+
+
+
+
+.noad .newslatter{
+    padding-top: 8rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.noad .newslatter .form-element{
+    padding: .5rem 2rem;
+}
+
+.noad .newslatter .input-element{
+    width: 80%;
+    height: 1.9rem;
+    padding: .3rem .5rem;
+}
+
+.noad .newslatter .form-btn{
+    border-radius: 0;
+    padding: .8rem 32%;
+    margin: 1rem 0;
+    background: var(--gradient);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ------------------------------ Feedback ------------------------------ */
+
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+/* ---------------------------------------------------------- */
+
+
+ 
+
+.feedback {
+  font-family:'Comic Sans MS';
+}
+
+
+form {
+      /*width: 50px;*/
+      background-color:greenyellow;             
+}
+/* 
+#btnReset {
+           width:100px;
+           height: 75px;
+           border-radius: 50%;
+           
+           background: linear-gradient(red,yellow,blue);
+}
+
+
+#btnSubmit {
+            width: 100px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: #fa4242
+} */
+
+.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    
+}
+
+.feedback {
+         background: linear-gradient(70deg, white, teal);
+         box-shadow: 0px 0px 20px black;
+         border-radius: 20px;
+         width: 80%;
+         margin: 0 auto;
+}
+
+.dropshadow {
+             box-shadow: 0px 0px 20px black;
+}
+
+.feedback {
+      text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+main .container .site-content .posts .post-content .touri {
+    padding-bottom: 8rem !important;
+}
+
+
+.main .container .site-content .posts .post-content .touri-title{
+    padding-top: 5rem;
+}  */
+
+
+
+#touri-content{
+    max-height: 594px;
+    overflow: hidden;
+
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+
+#touri-content.open{
+    max-height: 1500px;
+
+    
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
