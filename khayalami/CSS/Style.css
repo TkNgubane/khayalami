@@ -699,6 +699,12 @@ footer.footer .rights{
     justify-content: center;
 }
 
+
+
+footer.footer .developer{
+    color: var(--yell);
+}
+
 footer.footer .weblink{
     justify-content: center;
     margin-top: 0rem;
