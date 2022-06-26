@@ -172,6 +172,27 @@ p{
 
 /* <!-- ------------------------------------- Main Site secton ------------------------------------- --> */
 
+main .rent-house{
+    background: url('../Houzas/homeAgentWall.jpg');
+    background-size: cover;
+    height: 110vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+main .sell-house{
+    background: url('../Houzas/homeAgentWall.jpg');
+    background-size: cover;
+    height: 110vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
 /* ------------------- Home Wall ------------------- */
 main .site-title{
     background: url('../Houzas/homeAgentWall.jpg');
