@@ -173,21 +173,23 @@ p{
 /* <!-- ------------------------------------- Main Site secton ------------------------------------- --> */
 
 main .rent-house{
-    background: url('../Houzas/homeAgentWall.jpg');
-    background-size: cover;
-    height: 110vh;
+    background: url('../Houzas/rentalWall.jpg') !important;
+    background-size: cover !important;
+    height: 110vh !important;
 
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
+
+    padding-top: 10rem;
 }
 
 main .sell-house{
-    background: url('../Houzas/homeAgentWall.jpg');
-    background-size: cover;
-    height: 110vh;
+    background: url('../Houzas/forSaleWall.jpg') !important;
+    background-size: cover !important;
+    height: 110vh !important;
 
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 
